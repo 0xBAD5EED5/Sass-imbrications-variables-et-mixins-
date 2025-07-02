@@ -3,23 +3,25 @@ main {
   align-items: center;
   justify-content: center;
 
-  section.grid {
+  .grid {
     display: grid;
     grid-template-rows: repeat(10, 50px);
 
-    & > section {
+    > section {
       display: grid;
       grid-template-columns: repeat(10, 50px);
+      
+      // Étape 1 : Coloration des lignes
+      // &[class^="row-"]:nth-of-type(odd) {
+      //   background: #213458;
+      // }
 
-      // Imbrication pour colorier les lignes impaires
-      &[class^="row-"] {
-        &:nth-of-type(odd) {
+      > section {
+        border: 1px dotted black;
+        // Étape 2 : Colorier colonnes paires en partant de la droite
+        &:nth-last-child(odd) {
           background: #213458;
         }
-      }
-
-      & > section {
-        border: 1px dotted black;
       }
     }
   }

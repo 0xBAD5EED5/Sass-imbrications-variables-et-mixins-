@@ -14,19 +14,19 @@ main {
   align-items: center;
   justify-content: center;
 }
-main section.grid {
+main .grid {
   display: grid;
   grid-template-rows: repeat(10, 50px);
 }
-main section.grid > section {
+main .grid > section {
   display: grid;
   grid-template-columns: repeat(10, 50px);
 }
-main section.grid > section[class^=row-]:nth-of-type(odd) {
-  background: #213458;
-}
-main section.grid > section > section {
+main .grid > section > section {
   border: 1px dotted black;
+}
+main .grid > section > section:nth-last-child(odd) {
+  background: #213458;
 }
 
 html {
