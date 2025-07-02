@@ -19,7 +19,7 @@ main {
       > section {
         border: 1px dotted black;
         // Étape 2 : Colorier colonnes paires en partant de la droite
-        &:nth-last-child(odd) {
+        &:nth-child(even) {
           background: #213458;
         }
       }

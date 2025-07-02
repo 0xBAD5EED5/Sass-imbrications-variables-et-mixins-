@@ -25,7 +25,7 @@ main .grid > section {
 main .grid > section > section {
   border: 1px dotted black;
 }
-main .grid > section > section:nth-last-child(odd) {
+main .grid > section > section:nth-child(even) {
   background: #213458;
 }
 
