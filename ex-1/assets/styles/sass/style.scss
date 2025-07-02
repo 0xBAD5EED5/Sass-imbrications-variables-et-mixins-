@@ -20,8 +20,3 @@ body {
   font-variation-settings:
           "wdth" 100;
 }
-
-// Colorier les lignes impaires de la grille.
-section[class^="row-"]:nth-of-type(odd) {
-  background: #213458;
-}
