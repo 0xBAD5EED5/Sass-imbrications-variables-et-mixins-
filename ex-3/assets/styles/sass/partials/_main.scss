@@ -1,0 +1,25 @@
+@import "../_fonts";
+
+main {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+
+  article {
+    max-width:50vw;
+  }
+  
+  article {
+    p:nth-child(1) {
+      @include roboto(200);
+    }
+    
+    h2:nth-child(1) {
+      @include roboto(900);
+    }
+    
+    h3 {
+      @include roboto(700);
+    }
+  }
+}
