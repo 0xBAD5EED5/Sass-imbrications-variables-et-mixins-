@@ -1,0 +1,61 @@
+body > header {
+  background-color: #213458;
+  color: white;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+body > header h1 {
+  font-size: 2.5rem;
+}
+
+main {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+main section.grid {
+  display: grid;
+  grid-template-rows: repeat(10, 50px);
+}
+main section.grid > section {
+  display: grid;
+  grid-template-columns: repeat(10, 50px);
+}
+main section.grid > section:nth-of-type(10), main section.grid > section:nth-of-type(9) {
+  background-color: #26c5f3;
+}
+main section.grid > section:nth-of-type(8), main section.grid > section:nth-of-type(7) {
+  background-color: #3eabf4;
+}
+main section.grid > section:nth-of-type(6), main section.grid > section:nth-of-type(5) {
+  background-color: #5591f5;
+}
+main section.grid > section:nth-of-type(4), main section.grid > section:nth-of-type(3) {
+  background-color: #6d77f6;
+}
+main section.grid > section:nth-of-type(2), main section.grid > section:nth-of-type(1) {
+  background-color: #855df7;
+}
+main section.grid > section > section {
+  border: 1px dotted black;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: 10vh 90vh;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+/*# sourceMappingURL=style.css.map */
